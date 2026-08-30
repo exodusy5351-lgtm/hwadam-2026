@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>곤지암·화담숲 가족 여행 가이드</title>
+<meta name="description" content="곤지암리조트 & 화담숲 3대 가족 1박 2일 여행 가이드 — 일정, 코스, 테마원 도감, 먹거리, 체크리스트">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Noto+Serif+KR:wght@500;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --forest:#1E3A1E;
+    --forest-deep:#122712;
+    --forest-mid:#2E4F2E;
+    --forest-soft:#5E7D64;
+    --beige:#F8F6F0;
+    --beige-warm:#F0E9D8;
+    --card:#FFFEFA;
+    --brown:#8B5A2B;
+    --brown-deep:#6B431E;
+    --gold:#C9992F;
+    --gold-soft:#F1DFAF;
+    --terracotta:#B65C3E;
+    --ink:#2B2620;
+    --ink-soft:#6B6255;
+    --ink-faint:#948B7C;
+    --line:#E3DAC4;
+    --cat-move:#6B6255;
+    --cat-meal:#C9992F;
+    --cat-rest:#5E7D64;
+    --cat-activity:#B65C3E;
+    --shadow:0 2px 6px rgba(43,38,32,0.06), 0 14px 34px rgba(43,38,32,0.09);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--beige); color:var(--ink);
+    font-family:"IBM Plex Sans KR","Malgun Gothic",sans-serif; line-height:1.7;
+  }
+  h1,h2,h3,h4{margin:0; text-wrap:balance; font-family:"Noto Serif KR",serif; color:var(--forest);}
+  p{margin:0;}
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  button{font-family:inherit;}
+  .brand-serif{font-family:"Song Myung","Noto Serif KR",serif;}
+  .container{max-width:1080px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:10px;
+    font-size:0.76rem; font-weight:600; letter-spacing:0.16em; text-transform:uppercase;
+  }
+  .eyebrow::before{content:""; width:22px; height:1px; background:currentColor; opacity:0.5;}
+  .sub-title{font-size:1.05rem; font-weight:700; font-family:"Noto Serif KR",serif; color:var(--forest); margin:34px 0 14px;}
+
+  /* ---------- Tab nav ---------- */
+  nav.wing{
+    position:sticky; top:0; z-index:40;
+    background:rgba(248,246,240,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.wing::after{
+    content:""; position:absolute; top:0; right:0; bottom:0; width:36px;
+    background:linear-gradient(to right, transparent, var(--beige) 78%);
+    pointer-events:none;
+  }
+  .wing-inner{
+    max-width:1080px; margin:0 auto; padding:12px 24px;
+    display:flex; align-items:center; gap:10px;
+    overflow-x:auto; scrollbar-width:none;
+  }
+  .wing-inner::-webkit-scrollbar{display:none;}
+  .wing-mark{
+    flex:0 0 auto; font-family:"Song Myung",serif; font-size:1.15rem; color:var(--forest);
+    white-space:nowrap; padding-right:10px; margin-right:2px; border-right:1px solid var(--line);
+  }
+  .mtab-btn{
+    flex:0 0 auto; background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:9px 16px; font-family:inherit; font-size:0.86rem; font-weight:700;
+    color:var(--ink-soft); cursor:pointer; white-space:nowrap;
+  }
+  .mtab-btn.active{
+    background:var(--forest); border-color:var(--forest); color:var(--beige);
+    box-shadow:0 2px 8px rgba(30,58,30,0.25);
+  }
+
+  /* ---------- Hero ---------- */
+  header.hero{
+    background:
+      radial-gradient(90% 140% at 15% 0%, var(--forest-mid) 0%, transparent 55%),
+      linear-gradient(175deg, var(--forest) 0%, var(--forest-deep) 100%);
+    color:var(--beige); padding:56px 24px 0; position:relative; overflow:hidden;
+  }
+  header.hero::after{
+    content:""; position:absolute; inset:auto 0 0 0; height:60px;
+    background:linear-gradient(to top, var(--beige), transparent);
+  }
+  .hero-inner{max-width:820px; margin:0 auto; text-align:center; position:relative; z-index:1;}
+  .hero-inner .eyebrow{color:var(--gold-soft);}
+  .hero-title{
+    font-size:clamp(1.9rem, 5.5vw, 3rem); font-weight:400; color:var(--beige);
+    margin:20px 0 16px; line-height:1.3;
+  }
+  .hero-title .hanja{color:var(--gold-soft);}
+  .hero-sub{
+    font-family:"Noto Serif KR",serif; font-size:1rem; color:#D9DFCE;
+    max-width:34em; margin:0 auto 36px; line-height:1.85;
+  }
+  .hero-banner{
+    max-width:920px; margin:0 auto; transform:translateY(40%);
+    background:var(--card); border-radius:16px; box-shadow:var(--shadow);
+    display:grid; grid-template-columns:repeat(2,1fr); gap:1px;
+    background-color:var(--line); overflow:hidden; position:relative; z-index:2;
+  }
+  .hero-stat{background:var(--card); padding:18px 20px;}
+  .hero-stat .k{font-size:0.72rem; font-weight:600; letter-spacing:0.08em; color:var(--brown); text-transform:uppercase;}
+  .hero-stat .v{font-size:0.98rem; font-weight:600; color:var(--ink); margin-top:6px; line-height:1.5;}
+  .hero-stat .d{font-size:0.8rem; color:var(--ink-soft); margin-top:4px;}
+  header.hero{padding-bottom:110px;}
+
+  .tab-content{display:none;}
+  .tab-content.active{display:block; padding:36px 0 64px; animation:fade 0.3s ease both; scroll-margin-top:66px;}
+  @keyframes fade{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);}}
+  .section-head{max-width:640px; margin:0 auto 36px; text-align:center;}
+  .section-head .eyebrow{color:var(--brown); justify-content:center;}
+  .section-head h2{font-size:clamp(1.4rem,3.2vw,1.9rem); margin-top:14px;}
+  .section-head p{color:var(--ink-soft); margin-top:14px; font-size:0.96rem;}
+
+  /* ---------- Day timelines ---------- */
+  .tl-legend{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-bottom:26px;}
+  .tl-legend span{display:inline-flex; align-items:center; gap:6px; font-size:0.82rem; color:var(--ink-soft);}
+  .tl-legend-dot{width:9px; height:9px; border-radius:50%; flex:0 0 auto;}
+  ul.timeline{list-style:none; margin:0; padding:0; position:relative; max-width:760px; margin-left:auto; margin-right:auto;}
+  ul.timeline::before{content:""; position:absolute; left:19px; top:6px; bottom:6px; width:2px; background:var(--line);}
+  .tl-item{position:relative; display:flex; gap:16px; padding-bottom:26px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-node{
+    position:relative; z-index:1; flex:0 0 auto; width:40px; height:40px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--card); border:2px solid var(--cat-color); color:var(--cat-color);
+  }
+  .tl-node svg{width:19px; height:19px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round;}
+  .tl-card{
+    flex:1 1 auto; min-width:0; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--cat-color); border-radius:12px; padding:14px 16px; box-shadow:var(--shadow);
+  }
+  .tl-time{font-size:0.82rem; font-weight:600; color:var(--cat-color); margin-bottom:4px; letter-spacing:0.01em; font-variant-numeric:tabular-nums;}
+  .tl-title{font-size:1.05rem; font-weight:700; font-family:"Noto Serif KR",serif; margin-bottom:4px;}
+  .tl-desc{font-size:0.9rem; color:var(--ink-soft);}
+  .tl-tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:9px;}
+  .tag{font-size:0.76rem; font-weight:500; color:var(--forest); background:var(--beige-warm); padding:3px 9px; border-radius:999px;}
+  .care-note{display:flex; gap:8px; align-items:flex-start; margin-top:10px; padding:9px 11px; background:var(--gold-soft); border-radius:10px;}
+  .care-note svg{flex:0 0 auto; width:14px; height:14px; margin-top:3px; color:var(--brown);}
+  .care-note-text{font-size:0.82rem; color:var(--ink);}
+  .care-note-text b{color:var(--brown-deep); font-weight:700;}
+  .cat-move{--cat-color:var(--cat-move);}
+  .cat-meal{--cat-color:var(--cat-meal);}
+  .cat-rest{--cat-color:var(--cat-rest);}
+  .cat-activity{--cat-color:var(--cat-activity);}
+
+  .day-close{max-width:640px; margin:40px auto 0; display:flex; flex-direction:column; gap:10px; text-align:center;}
+  .dc-time{font-weight:700; color:var(--brown); margin-right:8px; font-variant-numeric:tabular-nums;}
+  .dc-item{color:var(--ink-soft); font-size:0.94rem;}
+
+  /* ---------- Trail map ---------- */
+  .park-facts{
+    max-width:920px; margin:0 auto 34px; display:flex; flex-wrap:wrap; justify-content:center;
+    gap:10px 30px; font-size:0.85rem; color:var(--ink-soft);
+  }
+  .park-facts b{color:var(--forest); font-weight:700; margin-right:4px;}
+  .map-figure{margin:0; max-width:960px; margin:0 auto;}
+  .map-frame{
+    background:var(--card); border:1px solid var(--line); border-radius:20px;
+    box-shadow:var(--shadow); padding:20px; overflow-x:auto;
+  }
+  .map-frame svg{width:100%; height:auto; min-width:640px; color:var(--forest);}
+  .trail-path{fill:none; stroke:var(--brown); stroke-width:3; stroke-dasharray:1 10; stroke-linecap:round;}
+  .trail-node circle.dot{fill:var(--card); stroke:var(--forest-mid); stroke-width:2; transition:fill 0.15s, stroke 0.15s;}
+  .trail-node text{fill:var(--ink); font-size:13px; font-family:"IBM Plex Sans KR",sans-serif;}
+  .trail-node{cursor:pointer;}
+  .trail-node:hover circle.dot, .trail-node:focus-visible circle.dot{fill:var(--gold-soft); stroke:var(--brown);}
+  .station-node circle.dot{fill:var(--gold); stroke:var(--brown-deep); stroke-width:2;}
+  .station-node text{font-weight:600; fill:var(--brown-deep);}
+  figcaption{max-width:960px; margin:16px auto 0; text-align:center; font-size:0.82rem; color:var(--ink-faint);}
+  .map-legend{display:flex; justify-content:center; flex-wrap:wrap; gap:18px; margin-top:18px; font-size:0.82rem; color:var(--ink-soft);}
+  .map-legend span{display:inline-flex; align-items:center; gap:7px;}
+  .legend-dot{width:11px; height:11px; border-radius:50%; border:2px solid var(--forest-mid); background:var(--card); display:inline-block;}
+  .legend-dot.station{background:var(--gold); border-color:var(--brown-deep);}
+  .landmark-note{
+    max-width:640px; margin:28px auto 0; display:flex; gap:16px; align-items:flex-start;
+    background:var(--beige-warm); border:1px solid var(--line); border-radius:16px; padding:20px 22px;
+  }
+  .landmark-emoji{font-size:1.8rem; flex:0 0 auto; line-height:1;}
+  .landmark-title{font-family:"Noto Serif KR",serif; font-weight:700; color:var(--forest); margin-bottom:6px;}
+  .landmark-desc{font-size:0.88rem; color:var(--ink-soft); line-height:1.75;}
+
+  /* ---------- Segmented course toggle (visually distinct from outer tabs) ---------- */
+  .tabs{max-width:760px; margin:0 auto;}
+  .seg-toggle{
+    display:flex; background:var(--beige-warm); border-radius:999px; padding:4px; gap:4px;
+    max-width:520px; margin:0 auto 26px; border:1px solid var(--line);
+  }
+  .seg-btn{
+    flex:1; text-align:center; padding:11px 14px; border-radius:999px; border:none; background:transparent;
+    font-weight:700; font-size:0.86rem; color:var(--ink-soft); cursor:pointer;
+    transition:background 0.2s ease, color 0.2s ease;
+  }
+  .seg-btn.active{background:var(--forest); color:var(--beige); box-shadow:var(--shadow);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block; animation:fade 0.3s ease both;}
+  .course-card{
+    background:var(--card); border:1px solid var(--line); border-radius:18px; padding:32px;
+    box-shadow:var(--shadow); display:grid; gap:22px;
+  }
+  .course-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:10px;}
+  .course-head h3{font-size:1.25rem;}
+  .course-badge{font-size:0.78rem; font-weight:600; padding:5px 12px; border-radius:999px; background:var(--beige-warm); color:var(--brown);}
+  .course-meta{display:flex; gap:22px; flex-wrap:wrap;}
+  .course-meta div{flex:1 1 140px;}
+  .course-meta .k{font-size:0.74rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.06em;}
+  .course-meta .v{font-size:1.02rem; font-weight:600; margin-top:4px;}
+  .course-steps{display:flex; flex-direction:column; gap:10px; border-top:1px dashed var(--line); padding-top:20px;}
+  .course-steps div{display:flex; gap:10px; font-size:0.94rem; color:var(--ink-soft);}
+  .course-steps b{color:var(--forest); font-family:"Noto Serif KR",serif; flex:0 0 auto;}
+  .mini-timeline{display:flex; flex-direction:column; gap:2px; border-top:1px dashed var(--line); padding-top:18px;}
+  .mt-row{display:flex; gap:14px; align-items:baseline; padding:7px 0; font-size:0.9rem;}
+  .mt-time{flex:0 0 92px; font-weight:600; color:var(--brown); font-variant-numeric:tabular-nums; font-size:0.84rem;}
+  .mt-label{color:var(--ink-soft);}
+  .mt-row.rest{background:var(--beige-warm); border-radius:8px; padding:7px 10px;}
+  .mt-row.rest .mt-time{color:var(--forest);}
+  .mt-row.rest .mt-label{color:var(--ink); font-weight:600;}
+  .joint-care{background:var(--beige-warm); border-radius:14px; padding:20px 22px; border:1px solid var(--line);}
+  .jc-title{font-weight:700; color:var(--forest); margin-bottom:12px; font-family:"Noto Serif KR",serif;}
+  .joint-care ul{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:7px;}
+  .joint-care li{font-size:0.88rem; color:var(--ink-soft);}
+
+  /* ---------- Encyclopedia ---------- */
+  .enc-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:20px;}
+  .enc-card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px;
+    border-top:4px solid var(--brown); box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:10px; scroll-margin-top:100px;
+    transition:box-shadow 0.4s, transform 0.4s;
+  }
+  .enc-card.highlight{box-shadow:0 0 0 3px var(--gold), var(--shadow); transform:translateY(-3px);}
+  .enc-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
+  .enc-card h3{font-size:1.1rem;}
+  .enc-season{font-size:0.72rem; color:var(--brown); font-weight:600; white-space:nowrap;}
+  .enc-desc{font-size:0.9rem; color:var(--ink-soft); line-height:1.75;}
+  .enc-badge{
+    align-self:flex-start; font-size:0.74rem; font-weight:600; color:var(--brown-deep);
+    background:var(--gold-soft); padding:4px 10px; border-radius:999px;
+  }
+
+  /* ---------- Food ---------- */
+  .food-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px;}
+  .food-card{background:var(--card); border-radius:18px; box-shadow:var(--shadow); overflow:hidden; border:1px solid var(--line);}
+  .food-head{background:var(--beige-warm); padding:20px 24px;}
+  .food-head h3{font-size:1.15rem;}
+  .food-head .hours{font-size:0.82rem; color:var(--brown); margin-top:4px; font-weight:600;}
+  .menu-row{display:flex; justify-content:space-between; padding:12px 24px; border-top:1px solid var(--line); font-size:0.92rem;}
+  .menu-row .name{color:var(--ink);}
+  .menu-row .price{color:var(--ink-soft); font-variant-numeric:tabular-nums;}
+
+  /* ---------- Checklist / Guide (read-only, checkbox flag only) ---------- */
+  .check-card{
+    max-width:760px; margin:0 auto 8px; background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:6px 4px; box-shadow:var(--shadow);
+  }
+  .check-row{display:flex; align-items:flex-start; gap:12px; padding:12px 14px; border-bottom:1px solid var(--line); cursor:pointer;}
+  .check-row:last-child{border-bottom:none;}
+  .check-row input{
+    appearance:none; -webkit-appearance:none; width:21px; height:21px; flex:0 0 auto; margin-top:1px;
+    border:2px solid var(--brown); border-radius:6px; display:grid; place-content:center; cursor:pointer; background:var(--card);
+  }
+  .check-row input::before{
+    content:""; width:11px; height:11px; transform:scale(0); background:var(--forest);
+    clip-path:polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 46% 63%); transition:transform 0.12s ease;
+  }
+  .check-row input:checked::before{transform:scale(1);}
+  .check-row input:checked ~ .check-text{color:var(--ink-faint); text-decoration:line-through; text-decoration-color:var(--line);}
+  .check-text{font-size:0.95rem; font-weight:500; color:var(--ink);}
+  .care-grid{max-width:760px; margin:0 auto; display:grid; gap:12px;}
+  .care-card{
+    display:flex; gap:14px; align-items:flex-start; background:var(--beige-warm); border-radius:14px; padding:16px;
+    border-left:3px solid var(--forest);
+  }
+  .care-icon{
+    flex:0 0 auto; width:36px; height:36px; border-radius:50%; background:var(--card); color:var(--forest);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .care-icon svg{width:18px; height:18px; stroke:currentColor; fill:none; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round;}
+  .care-title{font-weight:700; margin-bottom:3px; font-size:0.98rem; color:var(--ink);}
+  .care-desc{font-size:0.88rem; color:var(--ink-soft);}
+  .accordion{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:12px;}
+  .acc-item{background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden;}
+  .acc-q{
+    width:100%; text-align:left; padding:18px 22px; background:none; border:none; cursor:pointer;
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    font-weight:600; font-size:0.96rem; color:var(--ink);
+  }
+  .acc-q .plus{color:var(--brown); font-size:1.2rem; transition:transform 0.25s; flex:0 0 auto;}
+  .acc-item.open .plus{transform:rotate(45deg);}
+  .acc-a{max-height:0; overflow:hidden; transition:max-height 0.3s ease;}
+  .acc-item.open .acc-a{max-height:400px;}
+  .acc-a-inner{padding:0 22px 20px; font-size:0.9rem; color:var(--ink-soft); line-height:1.85;}
+  .note-caveat{max-width:760px; margin:24px auto 0; font-size:0.78rem; color:var(--ink-faint); text-align:center;}
+
+  footer.site{
+    margin-top:60px; background:var(--forest-deep); color:#C9D4C0; text-align:center;
+    padding:40px 24px 34px; font-size:0.84rem;
+  }
+  footer.site .brand-serif{color:var(--gold-soft); font-size:1.15rem; display:block; margin-bottom:8px;}
+
+  @media (max-width:640px){
+    .hero-banner{grid-template-columns:1fr;}
+    .tab-content.active{padding-top:28px;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="wing" aria-label="탭 이동">
+  <div class="wing-inner">
+    <span class="wing-mark">和談</span>
+    <button class="mtab-btn active" data-tab="day1" role="tab" aria-selected="true">1일 차</button>
+    <button class="mtab-btn" data-tab="day2" role="tab" aria-selected="false">2일 차</button>
+    <button class="mtab-btn" data-tab="course" role="tab" aria-selected="false">화담숲 코스</button>
+    <button class="mtab-btn" data-tab="encyclopedia" role="tab" aria-selected="false">테마원 도감</button>
+    <button class="mtab-btn" data-tab="food" role="tab" aria-selected="false">주막 먹거리</button>
+    <button class="mtab-btn" data-tab="guide" role="tab" aria-selected="false">체크리스트</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <span class="eyebrow">3대가족 · 1박 2일 · 곤지암리조트 &amp; 화담(和談)숲</span>
+    <h1 class="hero-title brand-serif">우리 가족의 <span class="hanja">화담(和談)</span></h1>
+    <p class="hero-sub">2026 가을, 세 세대가 함께 걷고 나누는 1박 2일 여행 가이드</p>
+  </div>
+  <div class="hero-banner">
+    <div class="hero-stat">
+      <div class="k">여행 일정</div>
+      <div class="v">2026.09.23(수) – 09.24(목)</div>
+      <div class="d">1박 2일 · 추석 연휴 전날</div>
+    </div>
+    <div class="hero-stat">
+      <div class="k">숙소 정보</div>
+      <div class="v">곤지암리조트 EW빌리지 Deluxe B · 정원 5인</div>
+      <div class="d">예약번호 26372758</div>
+    </div>
+    <div class="hero-stat">
+      <div class="k">핵심 예약</div>
+      <div class="v">9/24(목) 14:00–14:30 화담숲 입장</div>
+      <div class="d">1승강장 모노레일 사전예매 필수</div>
+    </div>
+    <div class="hero-stat">
+      <div class="k">이동 / 입실</div>
+      <div class="v">13:30 출발 → 약 2시간 소요</div>
+      <div class="d">연휴 정체 감안, 15:30~16:00 입실</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div class="tab-content active" id="tab-day1">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Day 1 · 09.23 (수)</span>
+      <h2>입실, 패밀리 스파 &amp; 야간 가족 탁구</h2>
+      <p>이동 → 노천탕 힐링 → 한식 저녁 → 생태하천 산책 → 3대 대항 탁구 매치</p>
+    </div>
+    <div class="tl-legend">
+      <span><span class="tl-legend-dot" style="background:var(--cat-move)"></span>이동</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-meal)"></span>식사</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-rest)"></span>휴식·힐링</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-activity)"></span>액티비티</span>
+    </div>
+    <ul class="timeline">
+      <li class="tl-item cat-move">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M3 13l2-6h14l2 6M5 13v5m14-5v5M5 18h2v2H5zm12 0h2v2h-2z"/><circle cx="7.5" cy="15" r="1"/><circle cx="16.5" cy="15" r="1"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">13:30 – 15:30</div>
+          <h3 class="tl-title">이동 (수도권 → 곤지암리조트)</h3>
+          <p class="tl-desc">추석 연휴 전날 정체를 감안해 약 2시간 소요 예상</p>
+          <div class="tl-tags"><span class="tag">실시간 교통정보 확인</span></div>
+          <div class="care-note"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/></svg><span class="care-note-text"><b>케어 포인트 ·</b> 여유 있게 13:30 출발, 휴게소에서 화장실·스트레칭 브레이크를 가져요.</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-move">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">15:30 – 16:00</div>
+          <h3 class="tl-title">모바일 체크인 &amp; 입실</h3>
+          <p class="tl-desc">EW빌리지 입실 후 스파 이용을 위한 수영복으로 환복</p>
+          <div class="tl-tags"><span class="tag">객실 짐 정리</span><span class="tag">온돌방 배정</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-rest">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M3 17c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M3 12.5c1.5-1 3-1 4.5 0s3 1 4.5 0 3-1 4.5 0 3 1 4.5 0"/><path d="M12 3v5.5"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">16:00 – 18:00</div>
+          <h3 class="tl-title">패밀리 스파 &amp; 노천탕</h3>
+          <p class="tl-desc">야외 온수 노천 스파 및 하이드로 마사지풀에서 이동 피로 해소</p>
+          <div class="tl-tags"><span class="tag">수영복·수영모 필수</span></div>
+          <div class="care-note"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/></svg><span class="care-note-text"><b>케어 포인트 ·</b> 탕 온도에 천천히 적응하고, 데크가 미끄러우니 슬리퍼 신고 천천히 이동해요.</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-meal">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 002 2v9M7 3v9M4 3v9M18 3c-2 1-2 4-2 6s0 3 2 3v9"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">18:30 – 20:00</div>
+          <h3 class="tl-title">정갈한 한식 저녁 식사</h3>
+          <p class="tl-desc">리조트 내 한식당 '담하' 또는 인근 한식 맛집에서 외식</p>
+        </div>
+      </li>
+      <li class="tl-item cat-rest">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M21 12.5A8.5 8.5 0 1111.5 3 6.8 6.8 0 0021 12.5z"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">20:00 – 21:00</div>
+          <h3 class="tl-title">생태하천 야경 산책 &amp; 카페 티타임</h3>
+          <p class="tl-desc">조명 데크길 평지 산책 후 근처 베이커리 카페에서 차 한 잔</p>
+          <div class="tl-tags"><span class="tag">계단 없는 평지 코스</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-activity">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="M11 11l7 7"/><path d="M20 20l-2-5 5-2z" fill="currentColor" stroke="none"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">21:15 – 22:15</div>
+          <h3 class="tl-title">가족 탁구 매치</h3>
+          <p class="tl-desc">빌리지센터 지하 1층 레포츠 캠프에서 3대 편 나누기 게임</p>
+        </div>
+      </li>
+      <li class="tl-item cat-rest">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M4 17v3M20 17v3M4 17a4 4 0 014-4h8a4 4 0 014 4M8 13V9a2 2 0 012-2h4a2 2 0 012 2v4"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">22:20 –</div>
+          <h3 class="tl-title">객실 복귀</h3>
+          <p class="tl-desc">온돌방에서 다과 나누며 하루 마무리 후 취침</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-day2">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Day 2 · 09.24 (목)</span>
+      <h2>든든한 조식, 곤돌라 &amp; 화담숲 오후 산림욕</h2>
+      <p>조식 → 빈손 체크아웃 → 전원 곤돌라 → 여유로운 브런치 → 화담숲 오후 힐링 산책 → 귀가</p>
+    </div>
+    <div class="tl-legend">
+      <span><span class="tl-legend-dot" style="background:var(--cat-move)"></span>이동</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-meal)"></span>식사</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-rest)"></span>휴식·힐링</span>
+      <span><span class="tl-legend-dot" style="background:var(--cat-activity)"></span>액티비티</span>
+    </div>
+    <ul class="timeline">
+      <li class="tl-item cat-meal">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 3v1.5M12 19.5V21M4.2 4.2l1.1 1.1M18.7 18.7l1.1 1.1M3 12h1.5M19.5 12H21M4.2 19.8l1.1-1.1M18.7 5.3l1.1-1.1"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">08:00 – 09:30</div>
+          <h3 class="tl-title">조식 뷔페</h3>
+          <p class="tl-desc">빌리지센터 1층 '미라시아' 뷔페에서 든든한 한식 조식 &amp; 모닝커피</p>
+        </div>
+      </li>
+      <li class="tl-item cat-move">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><rect x="6" y="7" width="12" height="13" rx="1.5"/><path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M6 12h12"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">09:30 – 11:00</div>
+          <h3 class="tl-title">휴식 &amp; 모바일 체크아웃</h3>
+          <p class="tl-desc">객실 정리 후 11:00 체크아웃, 모든 짐을 차량 트렁크에 전량 적재</p>
+          <div class="tl-tags"><span class="tag">짐 전량 사전 적재 · 빈손 이동</span></div>
+          <div class="care-note"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/></svg><span class="care-note-text"><b>케어 포인트 ·</b> 짐을 미리 다 실어두면 오후 화담숲까지 완전히 빈손으로 움직일 수 있어요.</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-activity">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M3 9l18-4M3 9l4 3v8M21 5l-4 7v6"/><rect x="6" y="12" width="4" height="4" rx="0.5"/><rect x="14" y="12" width="4" height="4" rx="0.5"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">11:00 – 12:30</div>
+          <h3 class="tl-title">곤돌라 하늘공원 전원 탑승</h3>
+          <p class="tl-desc">다 함께 곤돌라 탑승 → 슬로프 정상 능선 조망 및 가족사진 촬영</p>
+          <div class="tl-tags"><span class="tag">가을 능선 조망</span><span class="tag">가족사진 촬영</span></div>
+        </div>
+      </li>
+      <li class="tl-item cat-meal">
+        <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M18 8h1a3 3 0 010 6h-1M2 8h16v6a4 4 0 01-4 4H6a4 4 0 01-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></span>
+        <div class="tl-card">
+          <div class="tl-time">12:30 – 14:00</div>
+          <h3 class="tl-title">카페 브런치 &amp; 여유 휴식</h3>
+          <p class="tl-desc">리조트 내 카페에서 가벼운 브런치로 산책 전 휴식</p>
+        </div>
+      </li>
+    </ul>
+    <p style="max-width:760px; margin:36px auto 0; text-align:center; color:var(--ink-soft); font-size:0.94rem;">
+      14:30, 화담숲 입장 — 자세한 관람로와 코스는 위 <b style="color:var(--forest);">화담숲 코스</b> 탭에서, 테마원 소개는 <b style="color:var(--forest);">테마원 도감</b> 탭에서 확인하세요.
+    </p>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-course">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Day 2 오후 · Trail Map</span>
+      <h2>16개소를 잇는 관람로</h2>
+      <p>14:30 화담숲 입장 후, 1·2·3승강장 모노레일과 16개 테마원·명소가 하나의 숲길로 이어집니다. 원하는 지점을 눌러 도감에서 바로 확인해보세요.</p>
+    </div>
+    <div class="park-facts">
+      <span><b>운영시간</b> 09:00–18:00 (입장마감 17:00)</span>
+      <span><b>입장요금</b> 성인 11,000원 · 경로·청소년 9,000원 · 어린이 7,000원</span>
+      <span><b>예약</b> 가을 성수기 온라인 사전예약 권장</span>
+      <span><b>모노레일</b> 1,213m 순환선 · 편도 약 20분</span>
+    </div>
+    <figure class="map-figure">
+      <div class="map-frame">
+        <svg viewBox="0 0 1000 700" role="img" aria-label="화담숲 관람로 개략도: 1승강장에서 출발해 천년화담송을 지나 왼쪽 능선을 따라 9개 지점을 지나 정상의 2·3승강장에 오른 뒤, 오른쪽 능선을 따라 7개 지점을 지나 원앙연못을 거쳐 출구로 내려오는 순환 코스">
+          <path class="trail-path" d="M100,660 190,610 250,555 190,500 250,445 190,390 250,335 190,280 250,225 300,165 430,100 560,100 700,170 760,235 700,300 760,365 700,430 760,495 700,560 860,630"/>
+
+          <g class="trail-node station-node" data-target="none" tabindex="-1">
+            <circle class="dot" cx="100" cy="660" r="15"/>
+            <text x="100" y="686" text-anchor="middle">1승강장</text>
+          </g>
+          <g class="trail-node" data-target="songtree" tabindex="0" role="button" aria-label="천년화담송 카드로 이동">
+            <circle r="22" opacity="0" cx="190" cy="610"/>
+            <circle class="dot" cx="190" cy="610" r="9"/>
+            <text x="174" y="606" text-anchor="end">천년화담송</text>
+          </g>
+          <g class="trail-node" data-target="moss" tabindex="0" role="button" aria-label="이끼원 카드로 이동">
+            <circle r="22" opacity="0" cx="250" cy="555"/>
+            <circle class="dot" cx="250" cy="555" r="9"/>
+            <text x="266" y="551" text-anchor="start">이끼원</text>
+          </g>
+          <g class="trail-node" data-target="fern" tabindex="0" role="button" aria-label="양치식물원 카드로 이동">
+            <circle r="22" opacity="0" cx="190" cy="500"/>
+            <circle class="dot" cx="190" cy="500" r="9"/>
+            <text x="174" y="496" text-anchor="end">양치식물원</text>
+          </g>
+          <g class="trail-node" data-target="azalea" tabindex="0" role="button" aria-label="철쭉·진달래길 카드로 이동">
+            <circle r="22" opacity="0" cx="250" cy="445"/>
+            <circle class="dot" cx="250" cy="445" r="9"/>
+            <text x="266" y="441" text-anchor="start">철쭉·진달래길</text>
+          </g>
+          <g class="trail-node" data-target="plum" tabindex="0" role="button" aria-label="탐매원 카드로 이동">
+            <circle r="22" opacity="0" cx="190" cy="390"/>
+            <circle class="dot" cx="190" cy="390" r="9"/>
+            <text x="174" y="386" text-anchor="end">탐매원</text>
+          </g>
+          <g class="trail-node" data-target="birch" tabindex="0" role="button" aria-label="자작나무 숲 카드로 이동">
+            <circle r="22" opacity="0" cx="250" cy="335"/>
+            <circle class="dot" cx="250" cy="335" r="9"/>
+            <text x="266" y="331" text-anchor="start">자작나무 숲</text>
+          </g>
+          <g class="trail-node" data-target="pine" tabindex="0" role="button" aria-label="소나무 정원 카드로 이동">
+            <circle r="22" opacity="0" cx="190" cy="280"/>
+            <circle class="dot" cx="190" cy="280" r="9"/>
+            <text x="174" y="276" text-anchor="end">소나무 정원</text>
+          </g>
+          <g class="trail-node" data-target="rock" tabindex="0" role="button" aria-label="암석·하경정원 카드로 이동">
+            <circle r="22" opacity="0" cx="250" cy="225"/>
+            <circle class="dot" cx="250" cy="225" r="9"/>
+            <text x="266" y="221" text-anchor="start">암석·하경정원</text>
+          </g>
+          <g class="trail-node" data-target="bonsai" tabindex="0" role="button" aria-label="분재원 카드로 이동">
+            <circle r="22" opacity="0" cx="300" cy="165"/>
+            <circle class="dot" cx="300" cy="165" r="9"/>
+            <text x="300" y="145" text-anchor="middle">분재원</text>
+          </g>
+
+          <g class="trail-node station-node" data-target="none" tabindex="-1">
+            <circle class="dot" cx="430" cy="100" r="14"/>
+            <text x="430" y="78" text-anchor="middle">2승강장</text>
+          </g>
+          <g class="trail-node station-node" data-target="none" tabindex="-1">
+            <circle class="dot" cx="560" cy="100" r="14"/>
+            <text x="560" y="78" text-anchor="middle">3승강장</text>
+          </g>
+
+          <g class="trail-node" data-target="wall" tabindex="0" role="button" aria-label="전통 담장길 카드로 이동">
+            <circle r="22" opacity="0" cx="700" cy="170"/>
+            <circle class="dot" cx="700" cy="170" r="9"/>
+            <text x="700" y="150" text-anchor="middle">전통 담장길</text>
+          </g>
+          <g class="trail-node" data-target="hydrangea" tabindex="0" role="button" aria-label="수국원 카드로 이동">
+            <circle r="22" opacity="0" cx="760" cy="235"/>
+            <circle class="dot" cx="760" cy="235" r="9"/>
+            <text x="776" y="231" text-anchor="start">수국원</text>
+          </g>
+          <g class="trail-node" data-target="color" tabindex="0" role="button" aria-label="색채원 카드로 이동">
+            <circle r="22" opacity="0" cx="700" cy="300"/>
+            <circle class="dot" cx="700" cy="300" r="9"/>
+            <text x="684" y="296" text-anchor="end">색채원</text>
+          </g>
+          <g class="trail-node" data-target="mugunghwa" tabindex="0" role="button" aria-label="무궁화동산 카드로 이동">
+            <circle r="22" opacity="0" cx="760" cy="365"/>
+            <circle class="dot" cx="760" cy="365" r="9"/>
+            <text x="776" y="361" text-anchor="start">무궁화동산</text>
+          </g>
+          <g class="trail-node" data-target="firefly" tabindex="0" role="button" aria-label="반딧불이 서식처 카드로 이동">
+            <circle r="22" opacity="0" cx="700" cy="430"/>
+            <circle class="dot" cx="700" cy="430" r="9"/>
+            <text x="684" y="426" text-anchor="end">반딧불이 서식처</text>
+          </g>
+          <g class="trail-node" data-target="memory" tabindex="0" role="button" aria-label="추억의 정원 카드로 이동">
+            <circle r="22" opacity="0" cx="760" cy="495"/>
+            <circle class="dot" cx="760" cy="495" r="9"/>
+            <text x="776" y="491" text-anchor="start">추억의 정원</text>
+          </g>
+          <g class="trail-node" data-target="pond" tabindex="0" role="button" aria-label="원앙연못 카드로 이동">
+            <circle r="22" opacity="0" cx="700" cy="560"/>
+            <circle class="dot" cx="700" cy="560" r="9"/>
+            <text x="684" y="556" text-anchor="end">원앙연못</text>
+          </g>
+
+          <g class="trail-node station-node" data-target="none" tabindex="-1">
+            <circle class="dot" cx="860" cy="630" r="13"/>
+            <text x="860" y="656" text-anchor="middle">출구</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>실제 지형 및 동선과 다를 수 있는 이해를 돕기 위한 개략도입니다. 지점을 터치하면 도감 탭으로 이동합니다.</figcaption>
+    </figure>
+    <div class="map-legend">
+      <span><span class="legend-dot station"></span> 모노레일 승강장</span>
+      <span><span class="legend-dot"></span> 테마원·명소 (터치 가능)</span>
+    </div>
+
+    <div class="section-head" style="margin-top:56px;">
+      <span class="eyebrow">Course Recommendation</span>
+      <h2>우리 가족에게 맞는 코스</h2>
+      <p>체력과 시간에 맞춰 두 가지 코스 중 하나를 골라보세요.</p>
+    </div>
+    <div class="tabs">
+      <div class="seg-toggle" role="tablist">
+        <button class="seg-btn active" data-seg="parents" role="tab" aria-selected="true">부모님 맞춤 힐링 코스</button>
+        <button class="seg-btn" data-seg="trek" role="tab" aria-selected="false">숲길 완주 트레킹 코스</button>
+      </div>
+
+      <div class="tab-panel active" data-panel="parents">
+        <div class="course-card">
+          <div class="course-head">
+            <h3>부모님 맞춤 힐링 코스</h3>
+            <span class="course-badge">오르막 없음 · 무리 없는 동선</span>
+          </div>
+          <div class="course-meta">
+            <div><div class="k">입장 기준</div><div class="v">14:30</div></div>
+            <div><div class="k">소요 시간</div><div class="v">약 2시간</div></div>
+            <div><div class="k">이동 방식</div><div class="v">모노레일 1→2승강장 + 내리막 도보</div></div>
+            <div><div class="k">난이도</div><div class="v">매우 여유로움</div></div>
+          </div>
+          <div class="mini-timeline">
+            <div class="mt-row"><span class="mt-time">14:30</span><span class="mt-label">1승강장 도착, 입장 확인</span></div>
+            <div class="mt-row"><span class="mt-time">14:35–14:55</span><span class="mt-label">모노레일 탑승 → 2승강장(정상) 도착 · 오르막은 전량 모노레일로 해결</span></div>
+            <div class="mt-row"><span class="mt-time">14:55–15:10</span><span class="mt-label">정상 능선 조망 및 가족사진</span></div>
+            <div class="mt-row"><span class="mt-time">15:10–15:30</span><span class="mt-label">하산 1구간 도보 (20분)</span></div>
+            <div class="mt-row rest"><span class="mt-time">15:30–15:35</span><span class="mt-label">🪑 벤치 휴식</span></div>
+            <div class="mt-row"><span class="mt-time">15:35–15:55</span><span class="mt-label">하산 2구간 도보 (20분)</span></div>
+            <div class="mt-row rest"><span class="mt-time">15:55–16:00</span><span class="mt-label">🪑 벤치 휴식</span></div>
+            <div class="mt-row"><span class="mt-time">16:00–16:20</span><span class="mt-label">하산 3구간 도보 (20분) · 소나무 정원 · 분재원 · 추억의 정원 경유</span></div>
+            <div class="mt-row rest"><span class="mt-time">16:20–16:25</span><span class="mt-label">🪑 벤치 휴식</span></div>
+            <div class="mt-row"><span class="mt-time">16:25–16:30</span><span class="mt-label">원앙연못 도착, 코스 종료</span></div>
+          </div>
+          <div class="joint-care">
+            <div class="jc-title">🦵 관절 보호 체크리스트</div>
+            <ul>
+              <li>오르막 구간은 100% 모노레일로 이동, 도보 오르막은 없음</li>
+              <li>내리막은 20분 보행마다 5분 벤치 휴식으로 무릎 부담을 분산</li>
+              <li>트레킹폴 또는 지팡이 지참 권장</li>
+              <li>미끄럼 방지 밑창의 편안한 운동화 착용</li>
+              <li>전체 속도는 가장 느린 어르신의 보폭에 맞추기</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel="trek">
+        <div class="course-card">
+          <div class="course-head">
+            <h3>숲길 완주 트레킹 코스</h3>
+            <span class="course-badge">전 구간 무장애 데크</span>
+          </div>
+          <div class="course-meta">
+            <div><div class="k">총 거리</div><div class="v">5.3km</div></div>
+            <div><div class="k">소요 시간</div><div class="v">약 3시간</div></div>
+            <div><div class="k">이동 방식</div><div class="v">전 구간 도보</div></div>
+          </div>
+          <div class="course-steps">
+            <div><b>1</b> 1승강장 옆 천년화담송 · 이끼원 입구부터 도보로 출발, 16개소를 순서대로 관람</div>
+            <div><b>2</b> 양치식물원 → 자작나무 숲 → 소나무 정원 → 분재원 순으로 능선을 올라 정상 도달</div>
+            <div><b>3</b> 정상에서 하경정원·전통 담장길을 지나 수국원·무궁화동산 방면으로 하산</div>
+            <div><b>4</b> 추억의 정원과 원앙연못에서 휴식 후 출구로 완주</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-encyclopedia">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Theme Garden Encyclopedia</span>
+      <h2>화담숲 도감 (16개소)</h2>
+      <p>📸 뱃지가 붙은 곳은 가족 인생사진을 남기기 좋은 스팟입니다.</p>
+    </div>
+    <div class="enc-grid" id="enc-grid"><!-- filled by JS from ENCYCLOPEDIA data --></div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-food">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Day 2 · 17:00 – 18:00 · Food &amp; Rest</span>
+      <h2>숲에서 만나는 한 끼와 차 한 잔</h2>
+      <p>화담숲 산책을 마친 뒤, 원앙연못 인근 출구 앞에서 다리쉼과 함께 즐길 수 있어요.</p>
+    </div>
+    <div class="food-grid">
+      <div class="food-card">
+        <div class="food-head">
+          <h3>번지없는주막</h3>
+          <div class="hours">매일 10:30 – 18:00 · 주문마감 17:30</div>
+        </div>
+        <div class="menu-row"><span class="name">해물파전</span><span class="price">23,000원</span></div>
+        <div class="menu-row"><span class="name">두부김치</span><span class="price">18,000원</span></div>
+        <div class="menu-row"><span class="name">병천순대</span><span class="price">17,000원</span></div>
+        <div class="menu-row"><span class="name">어묵우동</span><span class="price">10,000원</span></div>
+        <div class="menu-row"><span class="name">야채 어묵김밥</span><span class="price">7,000원</span></div>
+      </div>
+      <div class="food-card">
+        <div class="food-head">
+          <h3>카페 화담</h3>
+          <div class="hours">매일 10:30 – 18:00 · 주문마감 17:30</div>
+        </div>
+        <div class="menu-row"><span class="name">단호박 / 찹쌀 식혜</span><span class="price">6,000원~</span></div>
+        <div class="menu-row"><span class="name">메밀 미숫가루</span><span class="price">6,000원</span></div>
+        <div class="menu-row"><span class="name">현미 뻥스크림</span><span class="price">5,000원</span></div>
+        <div class="menu-row"><span class="name">아메리카노 등 커피류</span><span class="price">판매 중</span></div>
+      </div>
+    </div>
+    <div class="day-close">
+      <div class="dc-item"><span class="dc-time">17:00–18:00</span>번지없는주막·카페 화담에서 티타임 (위 메뉴 참고)</div>
+      <div class="dc-item"><span class="dc-time">18:00 –</span>귀가 · 서울·수도권으로 출발, 힐링 여행 마무리</div>
+    </div>
+  </div>
+</div>
+
+<div class="tab-content" id="tab-guide">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Checklist &amp; Guide</span>
+      <h2>출발 전 체크리스트</h2>
+      <p>체크한 항목은 이 기기(브라우저)에만 저장되는 단순 표시입니다.</p>
+    </div>
+
+    <div class="check-card" id="prep-list">
+      <label class="check-row"><input type="checkbox" data-key="prep-1"><span class="check-text">곤지암리조트 앱 설치 및 예약번호 26372758 등록</span></label>
+      <label class="check-row"><input type="checkbox" data-key="prep-2"><span class="check-text">화담숲 9/24(목) 14:00–14:30 입장권 예매</span></label>
+      <label class="check-row"><input type="checkbox" data-key="prep-3"><span class="check-text">화담숲 1승강장 모노레일 탑승권 예매</span></label>
+      <label class="check-row"><input type="checkbox" data-key="prep-4"><span class="check-text">패밀리 스파용 수영복 및 모자 준비</span></label>
+      <label class="check-row"><input type="checkbox" data-key="prep-5"><span class="check-text">편안한 운동화 및 가벼운 겉옷 준비</span></label>
+    </div>
+
+    <h3 class="sub-title">현장 운영 원칙</h3>
+    <div class="care-grid">
+      <div class="care-card">
+        <span class="care-icon"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="14" height="9" rx="1.5"/><path d="M7 9V7a2 2 0 012-2h2a2 2 0 012 2v2M17 12h4v4h-4"/></svg></span>
+        <div>
+          <div class="care-title">수하물 원터치 규칙</div>
+          <div class="care-desc">11시 체크아웃 시 짐을 차량 트렁크에 전량 보관해두어, 화담숲까지 완전히 빈손으로 움직여요.</div>
+        </div>
+      </div>
+      <div class="care-card">
+        <span class="care-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span>
+        <div>
+          <div class="care-title">오후 산림욕의 여유</div>
+          <div class="care-desc">단체 관광객이 빠지는 14:30 입장으로, 한적한 가족사진과 피톤치드 힐링을 여유롭게 즐겨요.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">화담숲 방문 FAQ</h3>
+    <div class="accordion" id="accordion">
+      <div class="acc-item">
+        <button class="acc-q">반입 금지 물품이 있나요? <span class="plus">＋</span></button>
+        <div class="acc-a"><div class="acc-a-inner">주류, 돗자리, 텐트, 그늘막, 취사도구, 채집도구, 삼각대, 공, 킥보드, 드론은 반입이 금지됩니다. 반려동물과 함께 입장할 수 없습니다. 가져오신 음식물은 매표소 광장 왼편의 지정 장소에서 드신 후 입장해주세요. 매표소 옆 물품보관함(1,000원)을 이용할 수 있습니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">유모차·휠체어를 빌릴 수 있나요? <span class="plus">＋</span></button>
+        <div class="acc-a"><div class="acc-a-inner">유모차와 휠체어는 대여되지 않으니 개인 물품을 지참해주세요. 다만 전 테마원이 무장애 동선으로 조성되어 있어, 유모차나 휠체어로도 대부분의 구간을 편안하게 관람할 수 있습니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">모노레일은 어떻게 이용하나요? <span class="plus">＋</span></button>
+        <div class="acc-a"><div class="acc-a-inner">모노레일은 이끼원 입구부터 정상, 분재원 사이를 잇는 1,213m 순환선으로 전체 운행 약 20분이 걸립니다. 1승강장 티켓은 정문 매표소와 승강장 무인발권기에서, 2·3승강장 티켓은 각 승강장의 무인발권기에서만 구매할 수 있습니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">예약은 꼭 해야 하나요? <span class="plus">＋</span></button>
+        <div class="acc-a"><div class="acc-a-inner">가을 단풍철 등 성수기에는 시간대별 입장 인원을 제한하는 온라인 사전예약제가 운영될 수 있습니다. 방문 전 화담숲 공식 홈페이지에서 예약 필요 여부를 확인하시길 권장합니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">비 오는 날에도 즐길 수 있나요? <span class="plus">＋</span></button>
+        <div class="acc-a"><div class="acc-a-inner">우천 시 데크길 위주 구간은 미끄러울 수 있으니 걸음을 천천히 옮겨주세요. 트레킹폴이나 지팡이가 있으면 더욱 안전합니다.</div></div>
+      </div>
+    </div>
+    <p class="note-caveat">운영시간·요금·예약 정책은 시즌과 공휴일에 따라 달라질 수 있습니다. 방문 전 화담숲 공식 홈페이지(hwadamsup.com)에서 최신 정보를 다시 확인해주세요.</p>
+  </div>
+</div>
+
+</main>
+
+<footer class="site">
+  <span class="brand-serif">和談</span>
+  곤지암·화담숲 가족 여행 가이드 · 2026 가을, 3대가 함께한 1박 2일
+</footer>
+
+<script>
+(function(){
+  var ENCYCLOPEDIA = [
+    {id:"songtree", name:"천년화담송", season:"사계절", badge:true, desc:"화담숲 입구, 매표를 마치고 들어서면 가장 먼저 만나는 우아한 자태의 소나무. '천년'이라는 이름과 달리 정확한 수령은 공식적으로 알려져 있지 않지만, 방문객 모두가 발걸음을 멈추고 사진을 남기는 화담숲 첫 번째 포토스팟이다."},
+    {id:"moss", name:"이끼원", season:"장마철·늦가을", badge:true, desc:"계곡과 작은 폭포를 따라 조성되어 습기를 머금은 이끼 카펫과 그늘이 만든 서늘한 숲의 시작. 초록의 농도가 가장 짙어지는 계절에 신비로운 빛을 낸다."},
+    {id:"fern", name:"양치식물원", season:"봄~여름", badge:false, desc:"고사리류의 잎맥이 겹겹이 펼쳐진 원시적인 초록 지대. 오래전부터 이어져 온 식물의 생존력을 가까이서 들여다볼 수 있다."},
+    {id:"azalea", name:"철쭉·진달래길", season:"4월", badge:false, desc:"봄이면 분홍빛 물결로 뒤덮이는 오솔길. 조부모 세대에게는 어린 시절 뒷산을 떠올리게 하는 익숙한 봄의 색이다."},
+    {id:"plum", name:"탐매원", season:"2~3월", badge:false, desc:"이른 봄 매화가 가장 먼저 향기로 봄을 알리는 곳. 옛 선비들이 매화를 아꼈던 이유를 걸으며 느껴본다."},
+    {id:"birch", name:"자작나무 숲", season:"가을", badge:true, desc:"2,000여 그루가 이룬 새하얀 수피의 군락. 가을 노란 잎과 흰 줄기의 대비, 봄이면 발치를 덮는 수선화까지 사진이 가장 잘 나오는 순간을 만든다."},
+    {id:"pine", name:"소나무 정원", season:"사계절, 특히 겨울", badge:true, desc:"굽이진 소나무들이 만든 짙은 초록의 정원. 사계절 변하지 않는 푸르름이 화담숲의 근본을 보여준다."},
+    {id:"rock", name:"암석·하경정원", season:"여름", badge:true, desc:"바위와 이끼, 작은 물줄기가 어우러진 축소된 산수화 같은 공간. 물소리를 들으며 잠시 걸음을 늦추게 된다."},
+    {id:"bonsai", name:"분재원", season:"사계절", badge:false, desc:"수십 년, 길게는 그 이상을 기다려 다듬은 분재 약 550여 점의 전시. 모노레일 정상 구간 근처에 자리해 산 아래를 함께 조망할 수 있다."},
+    {id:"wall", name:"전통 담장길", season:"사계절", badge:false, desc:"한국 전통 담장의 켜켜이 쌓은 돌과 흙의 질감을 따라 걷는 짧은 길. 고즈넉한 사진 배경으로도 좋다."},
+    {id:"hydrangea", name:"수국원", season:"6~7월", badge:true, desc:"초여름이면 풍성한 수국 송이가 파스텔빛으로 가득 채우는 정원. 수만 본 규모로 알려진 화담숲의 대표 여름 명소다."},
+    {id:"color", name:"색채원", season:"봄~가을", badge:false, desc:"계절 초화가 파스텔부터 원색까지 색의 스펙트럼을 이루는 화단. 아이들이 색깔놀이 하듯 사진 찍기 좋은 구간."},
+    {id:"mugunghwa", name:"무궁화동산", season:"8~9월", badge:true, desc:"나라꽃 무궁화 수백 그루가 늦여름부터 피고 지기를 반복하는 언덕. 매일 새 꽃이 피어 방문할 때마다 다른 표정을 보여준다."},
+    {id:"firefly", name:"반딧불이 서식처", season:"7~8월 저녁", badge:false, desc:"청정한 환경에서만 사는 반딧불이가 여름밤 빛나는 보전구역. 낮에는 서식 환경을 살펴보는 것만으로도 의미가 있다."},
+    {id:"memory", name:"추억의 정원", season:"사계절", badge:true, desc:"옛 우물가와 장독대, 정겨운 시골 풍경을 재현한 공간. 조부모 세대의 어린 시절과 손주 세대의 오늘이 만나는 자리."},
+    {id:"pond", name:"원앙연못", season:"사계절", badge:false, desc:"이름에서 알 수 있듯 원앙을 테마로 조성된, 산림욕의 마지막을 장식하는 고요한 연못. 출구 앞 '번지없는주막'과 함께 하루 산책을 정리하기 좋은 자리다."}
+  ];
+
+  function renderEncyclopedia(){
+    var grid = document.getElementById("enc-grid");
+    grid.innerHTML = ENCYCLOPEDIA.map(function(g){
+      return '<article class="enc-card" id="card-' + g.id + '">' +
+        '<div class="enc-top"><h3>' + g.name + '</h3><span class="enc-season">' + g.season + '</span></div>' +
+        (g.badge ? '<span class="enc-badge">📸 가족 인생사진 스팟</span>' : '') +
+        '<p class="enc-desc">' + g.desc + '</p>' +
+      '</article>';
+    }).join("");
+  }
+
+  /* ---------- Outer tab switcher ---------- */
+  function activateTab(name){
+    document.querySelectorAll(".mtab-btn").forEach(function(b){
+      var isActive = b.dataset.tab === name;
+      b.classList.toggle("active", isActive);
+      b.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
+    document.querySelectorAll(".tab-content").forEach(function(c){
+      c.classList.toggle("active", c.id === "tab-" + name);
+    });
+  }
+  function initMainTabs(){
+    document.querySelectorAll(".mtab-btn").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        activateTab(btn.dataset.tab);
+        requestAnimationFrame(function(){
+          document.getElementById("tab-" + btn.dataset.tab).scrollIntoView({behavior:"smooth", block:"start"});
+        });
+      });
+    });
+  }
+
+  /* ---------- Trail map → encyclopedia jump ---------- */
+  function initTrailMap(){
+    document.querySelectorAll(".trail-node[data-target]").forEach(function(node){
+      var target = node.getAttribute("data-target");
+      if(target === "none") return;
+      node.addEventListener("click", function(){ jumpToCard(target); });
+      node.addEventListener("keydown", function(e){
+        if(e.key === "Enter" || e.key === " "){ e.preventDefault(); jumpToCard(target); }
+      });
+    });
+  }
+  function jumpToCard(id){
+    var card = document.getElementById("card-" + id);
+    if(!card) return;
+    activateTab("encyclopedia");
+    requestAnimationFrame(function(){
+      card.scrollIntoView({behavior:"smooth", block:"center"});
+      card.classList.add("highlight");
+      setTimeout(function(){ card.classList.remove("highlight"); }, 1600);
+    });
+  }
+
+  /* ---------- Segmented course toggle (parents / trek) ---------- */
+  function initSegToggle(){
+    var btns = document.querySelectorAll(".seg-btn");
+    btns.forEach(function(btn){
+      btn.addEventListener("click", function(){
+        btns.forEach(function(b){ b.classList.remove("active"); b.setAttribute("aria-selected","false"); });
+        btn.classList.add("active"); btn.setAttribute("aria-selected","true");
+        document.querySelectorAll(".tab-panel").forEach(function(p){
+          p.classList.toggle("active", p.dataset.panel === btn.dataset.seg);
+        });
+      });
+    });
+  }
+
+  function initAccordion(){
+    document.querySelectorAll(".acc-q").forEach(function(q){
+      q.addEventListener("click", function(){
+        var item = q.closest(".acc-item");
+        var wasOpen = item.classList.contains("open");
+        document.querySelectorAll(".acc-item").forEach(function(i){ i.classList.remove("open"); });
+        if(!wasOpen) item.classList.add("open");
+      });
+    });
+  }
+
+  /* ---------- Checklist: local flag only, no shared state ---------- */
+  function initPrepChecklist(){
+    var boxes = document.querySelectorAll("#prep-list input[type=\"checkbox\"]");
+    boxes.forEach(function(box){
+      var key = "hwadam-guide-chk-" + box.dataset.key;
+      try{ if(localStorage.getItem(key) === "1") box.checked = true; }catch(e){}
+      box.addEventListener("change", function(){
+        try{ localStorage.setItem(key, box.checked ? "1" : "0"); }catch(e){}
+      });
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function(){
+    renderEncyclopedia();
+    initMainTabs();
+    initTrailMap();
+    initSegToggle();
+    initAccordion();
+    initPrepChecklist();
+  });
+})();
+</script>
+</body>
+</html>
