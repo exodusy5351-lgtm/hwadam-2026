@@ -153,6 +153,12 @@
   .care-note svg{flex:0 0 auto; width:14px; height:14px; margin-top:3px; color:var(--brown);}
   .care-note-text{font-size:0.82rem; color:var(--ink);}
   .care-note-text b{color:var(--brown-deep); font-weight:700;}
+  .split-options{display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:10px; margin-top:10px;}
+  .split-opt{background:var(--beige-warm); border-radius:10px; padding:10px 12px;}
+  .split-opt .opt-label{display:block; font-weight:700; font-size:0.78rem; color:var(--brown-deep); margin-bottom:3px;}
+  .split-opt .opt-who{display:block; font-size:0.72rem; color:var(--ink-faint); margin-bottom:4px;}
+  .split-opt .opt-desc{font-size:0.86rem; color:var(--ink-soft);}
+  .split-note{margin-top:10px; font-size:0.84rem; color:var(--brown); font-weight:600;}
   .cat-move{--cat-color:var(--cat-move);}
   .cat-meal{--cat-color:var(--cat-meal);}
   .cat-rest{--cat-color:var(--cat-rest);}
@@ -368,8 +374,8 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Day 1 · 09.23 (수)</span>
-      <h2>입실, 패밀리 스파 &amp; 야간 가족 탁구</h2>
-      <p>이동 → 노천탕 힐링 → 한식 저녁 → 생태하천 산책 → 3대 대항 탁구 매치</p>
+      <h2>입실, 패밀리 스파 &amp; 야간 힐링 휴식</h2>
+      <p>이동 → 노천탕 힐링 → 한식 저녁 → 생태하천 산책 → 온돌방 조기 취침</p>
     </div>
     <div class="tl-legend">
       <span><span class="tl-legend-dot" style="background:var(--cat-move)"></span>이동</span>
@@ -402,7 +408,7 @@
         <div class="tl-card">
           <div class="tl-time">16:00 – 18:00</div>
           <h3 class="tl-title">패밀리 스파 &amp; 노천탕</h3>
-          <p class="tl-desc">야외 온수 노천 스파 및 하이드로 마사지풀에서 이동 피로 해소</p>
+          <p class="tl-desc">야외 온수 노천 스파 및 하이드로풀에서 장거리 이동 피로 해소</p>
           <div class="tl-tags"><span class="tag">수영복·수영모 필수</span></div>
           <div class="care-note"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/></svg><span class="care-note-text"><b>케어 포인트 ·</b> 탕 온도에 천천히 적응하고, 데크가 미끄러우니 슬리퍼 신고 천천히 이동해요.</span></div>
         </div>
@@ -418,26 +424,18 @@
       <li class="tl-item cat-rest">
         <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M21 12.5A8.5 8.5 0 1111.5 3 6.8 6.8 0 0021 12.5z"/></svg></span>
         <div class="tl-card">
-          <div class="tl-time">20:00 – 21:00</div>
+          <div class="tl-time">20:00 – 21:15</div>
           <h3 class="tl-title">생태하천 야경 산책 &amp; 카페 티타임</h3>
-          <p class="tl-desc">조명 데크길 평지 산책 후 근처 베이커리 카페에서 차 한 잔</p>
+          <p class="tl-desc">계단 없는 평지 조명 데크길 산책 후 따뜻한 차 한 잔</p>
           <div class="tl-tags"><span class="tag">계단 없는 평지 코스</span></div>
-        </div>
-      </li>
-      <li class="tl-item cat-activity">
-        <span class="tl-node"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="4"/><path d="M11 11l7 7"/><path d="M20 20l-2-5 5-2z" fill="currentColor" stroke="none"/></svg></span>
-        <div class="tl-card">
-          <div class="tl-time">21:15 – 22:15</div>
-          <h3 class="tl-title">가족 탁구 매치</h3>
-          <p class="tl-desc">빌리지센터 지하 1층 레포츠 캠프에서 3대 편 나누기 게임</p>
         </div>
       </li>
       <li class="tl-item cat-rest">
         <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M4 17v3M20 17v3M4 17a4 4 0 014-4h8a4 4 0 014 4M8 13V9a2 2 0 012-2h4a2 2 0 012 2v4"/></svg></span>
         <div class="tl-card">
-          <div class="tl-time">22:20 –</div>
-          <h3 class="tl-title">객실 복귀</h3>
-          <p class="tl-desc">온돌방에서 다과 나누며 하루 마무리 후 취침</p>
+          <div class="tl-time">21:15 –</div>
+          <h3 class="tl-title">객실 복귀 &amp; 온돌방 휴식</h3>
+          <p class="tl-desc">무리한 체력 소모 없이 가족 다과 담소 후 조기 취침</p>
         </div>
       </li>
     </ul>
@@ -448,8 +446,8 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">Day 2 · 09.24 (목)</span>
-      <h2>든든한 조식, 곤돌라 &amp; 화담숲 오후 산림욕</h2>
-      <p>조식 → 빈손 체크아웃 → 전원 곤돌라 → 여유로운 브런치 → 화담숲 오후 힐링 산책 → 귀가</p>
+      <h2>든든한 조식, 곤돌라·루지 &amp; 화담숲 오후 산림욕</h2>
+      <p>조식 → 빈손 체크아웃 → 곤돌라·루지 2개 조 → 여유로운 브런치 → 화담숲 오후 힐링 산책 → 귀가</p>
     </div>
     <div class="tl-legend">
       <span><span class="tl-legend-dot" style="background:var(--cat-move)"></span>이동</span>
@@ -471,8 +469,8 @@
         <div class="tl-card">
           <div class="tl-time">09:30 – 11:00</div>
           <h3 class="tl-title">휴식 &amp; 모바일 체크아웃</h3>
-          <p class="tl-desc">객실 정리 후 11:00 체크아웃, 모든 짐을 차량 트렁크에 전량 적재</p>
-          <div class="tl-tags"><span class="tag">짐 전량 사전 적재 · 빈손 이동</span></div>
+          <p class="tl-desc">수하물 원터치: 11:00 체크아웃 시 모든 짐을 차량 트렁크에 전량 사전 적재</p>
+          <div class="tl-tags"><span class="tag">수하물 원터치</span><span class="tag">오후 화담숲까지 완전 빈손 이동</span></div>
           <div class="care-note"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.2 4.5 2.7C12 6.2 13.5 5 15.5 5 19 5 21.5 8.5 19.5 12.5 17 16.65 12 21 12 21z"/></svg><span class="care-note-text"><b>케어 포인트 ·</b> 짐을 미리 다 실어두면 오후 화담숲까지 완전히 빈손으로 움직일 수 있어요.</span></div>
         </div>
       </li>
@@ -480,17 +478,29 @@
         <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M3 9l18-4M3 9l4 3v8M21 5l-4 7v6"/><rect x="6" y="12" width="4" height="4" rx="0.5"/><rect x="14" y="12" width="4" height="4" rx="0.5"/></svg></span>
         <div class="tl-card">
           <div class="tl-time">11:00 – 12:30</div>
-          <h3 class="tl-title">곤돌라 하늘공원 전원 탑승</h3>
-          <p class="tl-desc">다 함께 곤돌라 탑승 → 슬로프 정상 능선 조망 및 가족사진 촬영</p>
-          <div class="tl-tags"><span class="tag">가을 능선 조망</span><span class="tag">가족사진 촬영</span></div>
+          <h3 class="tl-title">오전 맞춤 액티비티 (2개 조 분리 운영)</h3>
+          <p class="tl-desc">전원 탑승 또는 체력·취향에 맞춰 두 조로 나누어 즐기는 오전 시간</p>
+          <div class="split-options">
+            <div class="split-opt">
+              <span class="opt-label">옵션 A · 곤돌라 힐링조</span>
+              <span class="opt-who">조부모 · 부모</span>
+              <span class="opt-desc">곤돌라 탑승 → 정상 하늘공원 능선 조망 및 가족사진 촬영</span>
+            </div>
+            <div class="split-opt">
+              <span class="opt-label">옵션 B · 루지 체험조</span>
+              <span class="opt-who">아이 · 인솔자</span>
+              <span class="opt-desc">전용 리프트 탑승 → 루지 360 트랙 1~2회 주행</span>
+            </div>
+          </div>
+          <div class="split-note">📍 12:30, 1층 카페 광장에서 전원 집결 후 브런치로 이동</div>
         </div>
       </li>
       <li class="tl-item cat-meal">
         <span class="tl-node"><svg viewBox="0 0 24 24"><path d="M18 8h1a3 3 0 010 6h-1M2 8h16v6a4 4 0 01-4 4H6a4 4 0 01-4-4z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg></span>
         <div class="tl-card">
           <div class="tl-time">12:30 – 14:00</div>
-          <h3 class="tl-title">카페 브런치 &amp; 여유 휴식</h3>
-          <p class="tl-desc">리조트 내 카페에서 가벼운 브런치로 산책 전 휴식</p>
+          <h3 class="tl-title">카페 브런치 &amp; 여유 티타임</h3>
+          <p class="tl-desc">리조트 내 카페 브런치와 함께 화담숲 산책 전 여유로운 휴식</p>
         </div>
       </li>
     </ul>
