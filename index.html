@@ -181,6 +181,15 @@
     height: 12px;
     fill: currentColor;
   }
+  .map-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .map-links .map-link-btn {
+    margin-top: 0;
+  }
   .cat-move{--cat-color:var(--cat-move);}
   .cat-meal{--cat-color:var(--cat-meal);}
   .cat-rest{--cat-color:var(--cat-rest);}
@@ -438,10 +447,16 @@
               <span class="opt-label">1. 토담 (오리장작구이)</span>
               <span class="opt-who">차량 5~7분</span>
               <span class="opt-desc">훈제오리·삼겹 바베큐 &amp; 들깨수제비 (남녀노소 호불호 없는 명소)</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암+토담" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
             <!-- 석식 2. 궁뜰 발효밥상 -->
@@ -449,10 +464,16 @@
               <span class="opt-label">2. 궁뜰 맛있는 발효밥상</span>
               <span class="opt-who">차량 8~10분</span>
               <span class="opt-desc">건강한 발효 한정식 코스 (보리굴비, 게장 등 정갈한 한상)</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+궁뜰+발효밥상" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+궁뜰+발효밥상" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암+궁뜰+발효밥상" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
             <!-- 석식 3. 구향 -->
@@ -460,10 +481,16 @@
               <span class="opt-label">3. 구향 참나무 바베큐</span>
               <span class="opt-who">차량 5분</span>
               <span class="opt-desc">숲속 분위기의 참나무 초벌 삼겹살 &amp; 숯불구이</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+구향" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+구향" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암+구향" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
           </div>
@@ -518,10 +545,16 @@
               <span class="opt-label">1. 미라시아 조식 뷔페</span>
               <span class="opt-who">리조트 빌리지센터 1층 (도보)</span>
               <span class="opt-desc">한식/양식 패밀리 뷔페 · 차 이동 없이 객실에서 바로 식사</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암리조트+미라시아" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암리조트+미라시아" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암리조트+미라시아" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
             <!-- 조식 2. 최미자소머리국밥 -->
@@ -529,10 +562,16 @@
               <span class="opt-label">2. 최미자소머리국밥 (본관/1관)</span>
               <span class="opt-who">차량 10~15분 (06:00 오픈)</span>
               <span class="opt-desc">곤지암 대표 명소 · 잡내 없는 맑고 진한 국물과 부드러운 수육</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+최미자소머리국밥+본관" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+최미자소머리국밥+본관" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암+최미자소머리국밥+본관" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
             <!-- 조식 3. 토담골 황태·순두부 -->
@@ -540,10 +579,16 @@
               <span class="opt-label">3. 토담골 / 순두부 전문점</span>
               <span class="opt-who">차량 10분 내외</span>
               <span class="opt-desc">담백한 황태해장국·순두부 정식 · 부모님 맞춤 소화 잘되는 아침</span>
-              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담골" target="_blank" rel="noopener noreferrer" class="map-link-btn">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                네이버 지도 리뷰 보기
-              </a>
+              <div class="map-links">
+                <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담골" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  네이버 지도 리뷰 보기
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=곤지암+토담골" target="_blank" rel="noopener noreferrer" class="map-link-btn" style="background:#4285F4;">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  구글 지도 리뷰 보기
+                </a>
+              </div>
             </div>
 
           </div>
