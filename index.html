@@ -159,6 +159,28 @@
   .split-opt .opt-who{display:block; font-size:0.72rem; color:var(--ink-faint); margin-bottom:4px;}
   .split-opt .opt-desc{font-size:0.86rem; color:var(--ink-soft);}
   .split-note{margin-top:10px; font-size:0.84rem; color:var(--brown); font-weight:600;}
+  .map-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    padding: 4px 10px;
+    background: #03C75A;
+    color: #ffffff !important;
+    font-size: 0.74rem;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+  .map-link-btn:hover {
+    opacity: 0.88;
+  }
+  .map-link-btn svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+  }
   .cat-move{--cat-color:var(--cat-move);}
   .cat-meal{--cat-color:var(--cat-meal);}
   .cat-rest{--cat-color:var(--cat-rest);}
@@ -409,22 +431,41 @@
           <div class="tl-time">17:30 – 18:50</div>
           <h3 class="tl-title">온 가족 외부 이른 저녁 만찬</h3>
           <p class="tl-desc">대기 없이 여유로운 17:30 저녁 식사 후 동생 내외 배웅</p>
-          <div class="split-options" style="grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); margin-top:10px;">
+          <div class="split-options" style="grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); margin-top:10px;">
+
+            <!-- 석식 1. 토담 -->
             <div class="split-opt" style="border-left:3px solid var(--forest);">
               <span class="opt-label">1. 토담 (오리장작구이)</span>
               <span class="opt-who">차량 5~7분</span>
               <span class="opt-desc">훈제오리·삼겹 바베큐 &amp; 들깨수제비 (남녀노소 호불호 없는 명소)</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
+
+            <!-- 석식 2. 궁뜰 발효밥상 -->
             <div class="split-opt" style="border-left:3px solid var(--gold);">
-              <span class="opt-label">2. 궁뜰 발효밥상</span>
+              <span class="opt-label">2. 궁뜰 맛있는 발효밥상</span>
               <span class="opt-who">차량 8~10분</span>
               <span class="opt-desc">건강한 발효 한정식 코스 (보리굴비, 게장 등 정갈한 한상)</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+궁뜰+발효밥상" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
+
+            <!-- 석식 3. 구향 -->
             <div class="split-opt" style="border-left:3px solid var(--brown);">
               <span class="opt-label">3. 구향 참나무 바베큐</span>
               <span class="opt-who">차량 5분</span>
               <span class="opt-desc">숲속 분위기의 참나무 초벌 삼겹살 &amp; 숯불구이</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+구향" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
+
           </div>
         </div>
       </li>
@@ -471,24 +512,40 @@
           <p class="tl-desc">가족 선호와 당일 컨디션에 따라 리조트 내 뷔페 또는 인근 명소 선택</p>
 
           <div class="split-options" style="grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); margin-top:12px;">
-            <!-- 옵션 1 -->
+
+            <!-- 조식 1. 미라시아 -->
             <div class="split-opt" style="border-left:3px solid var(--forest);">
               <span class="opt-label">1. 미라시아 조식 뷔페</span>
-              <span class="opt-who">리조트 빌리지센터 1층 (도보 이동)</span>
-              <span class="opt-desc">한식/양식 패밀리 뷔페 · 차 이동 없이 객실에서 바로 편안한 식사</span>
+              <span class="opt-who">리조트 빌리지센터 1층 (도보)</span>
+              <span class="opt-desc">한식/양식 패밀리 뷔페 · 차 이동 없이 객실에서 바로 식사</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암리조트+미라시아" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
-            <!-- 옵션 2 -->
+
+            <!-- 조식 2. 최미자소머리국밥 -->
             <div class="split-opt" style="border-left:3px solid var(--brown);">
-              <span class="opt-label">2. 최미자 / 배연정 소머리국밥</span>
+              <span class="opt-label">2. 최미자소머리국밥 (본관/1관)</span>
               <span class="opt-who">차량 10~15분 (06:00 오픈)</span>
-              <span class="opt-desc">곤지암 대표 명소 · 잡내 없는 맑고 진한 국물과 부드러운 수육으로 든든한 한 끼</span>
+              <span class="opt-desc">곤지암 대표 명소 · 잡내 없는 맑고 진한 국물과 부드러운 수육</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+최미자소머리국밥+본관" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
-            <!-- 옵션 3 -->
+
+            <!-- 조식 3. 토담골 황태·순두부 -->
             <div class="split-opt" style="border-left:3px solid var(--gold);">
-              <span class="opt-label">3. 황태·순두부 한식 (토담골 등)</span>
+              <span class="opt-label">3. 토담골 / 순두부 전문점</span>
               <span class="opt-who">차량 10분 내외</span>
-              <span class="opt-desc">자극적이지 않고 담백한 황태해장국·순두부 정식 · 부모님 맞춤 소화 잘되는 아침</span>
+              <span class="opt-desc">담백한 황태해장국·순두부 정식 · 부모님 맞춤 소화 잘되는 아침</span>
+              <a href="https://m.map.naver.com/search2/search.naver?query=곤지암+토담골" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                네이버 지도 리뷰 보기
+              </a>
             </div>
+
           </div>
 
           <div class="care-note" style="margin-top:12px;">
