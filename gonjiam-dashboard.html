@@ -1,0 +1,61 @@
+<title>곤지암 힐링 로드맵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EEF1E6;
+    --surface:#FCFCF6;
+    --surface-alt:#E2E8D6;
+    --ink:#223026;
+    --ink-soft:#5C6B5F;
+    --ink-faint:#8B9689;
+    --primary:#33543D;
+    --primary-soft:#6E8F73;
+    --accent:#C1862E;
+    --line:#D6DCC6;
+    --shadow: 0 1px 2px rgba(34,48,38,0.06), 0 6px 20px rgba(34,48,38,0.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141E17; --surface:#1C2820; --surface-alt:#243328;
+      --ink:#E8EEE1; --ink-soft:#A7B6A4; --ink-faint:#728072;
+      --primary:#93C199; --primary-soft:#5E7D64; --accent:#E3B15C; --line:#324235;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141E17; --surface:#1C2820; --surface-alt:#243328;
+    --ink:#E8EEE1; --ink-soft:#A7B6A4; --ink-faint:#728072;
+    --primary:#93C199; --primary-soft:#5E7D64; --accent:#E3B15C; --line:#324235;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--ink);
+    font-family:"IBM Plex Sans KR","Malgun Gothic",sans-serif; line-height:1.7; padding:24px;
+  }
+  .card{
+    max-width:480px; width:100%; background:var(--surface); border:1px solid var(--line);
+    border-radius:20px; box-shadow:var(--shadow); padding:40px 32px; text-align:center;
+  }
+  .emoji{font-size:2.2rem; margin-bottom:14px;}
+  h1{
+    font-family:"Gowun Batang",serif; font-size:1.4rem; font-weight:700; color:var(--ink);
+    margin:0 0 12px;
+  }
+  p{color:var(--ink-soft); font-size:0.94rem; margin:0 0 26px; line-height:1.8;}
+  a.cta{
+    display:inline-flex; align-items:center; gap:8px; padding:13px 26px; border-radius:999px;
+    background:var(--primary); color:var(--bg); text-decoration:none; font-weight:600; font-size:0.95rem;
+  }
+  .note{margin-top:22px; font-size:0.78rem; color:var(--ink-faint);}
+</style>
+<div class="card">
+  <div class="emoji">🍁 → 🌲</div>
+  <h1>이 페이지는 통합되었습니다</h1>
+  <p>곤지암리조트 일정과 화담숲 정보·추억보관함이<br>하나의 <b>곤지암·화담숲 가족 아카이브</b>로 합쳐졌어요.<br>이제부터는 아래 새 링크 하나만 사용해주세요.</p>
+  <a class="cta" href="https://claude.ai/code/artifact/0788f19b-7045-43c1-913f-7cfdcdef0aea">통합 대시보드로 이동 →</a>
+  <div class="note">이 페이지는 더 이상 갱신되지 않습니다.</div>
+</div>
